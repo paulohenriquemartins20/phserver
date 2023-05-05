@@ -1,0 +1,44 @@
+<html>
+
+
+<head>
+
+  <title> cadatre aqui</title>
+
+
+  <link rel='stylesheet'  href='css/c.css'>
+
+</head>
+<body>
+
+   
+ <form action='{% url 'mo' %}'  method='post'>  
+
+    {% csrf_token %}
+    Nome
+    <input type='text' name='nome' />
+
+    Idade
+    <input type='text' name='idade' />
+
+
+    CPF 
+    <input type='text' name='cpf' />
+
+
+    <button> enviar </button>
+
+ </form>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
